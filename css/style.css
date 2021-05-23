@@ -209,6 +209,8 @@ ul {
 .news-item .image {
   float: left;
   width: 100%;
+  max-height: 141px;
+    overflow: hidden;
 }
 .news-child .news-item .content {
   float: left;
@@ -220,6 +222,7 @@ ul {
   margin-bottom: 0px;
   max-height: 60px;
   overflow: hidden;
+  text-align: justify;
 }
 .news-child .news-item .news-title a {
   color: #323232;
@@ -270,7 +273,7 @@ ul {
 .list-item {
   float: left;
   padding-left: 30px;
-  padding-top: 17px;
+  padding-top: 25px;
   padding-right: 15px;
 }
 .list-item .title {
@@ -925,6 +928,16 @@ ul {
   text-align: center;
   padding-top: 8px;
 }
+.vnindex tbody tr td.up:after{
+  content: '\e807';
+  font-family: "fontello";
+  color: #0b9800;
+}
+.vnindex tbody tr td.down:after{
+  content: '\e806';
+  font-family: "fontello";
+  color: #f73e3e;
+}
 .mg-bottom-10 {
   margin-bottom: 10px !important;
 }
@@ -1090,16 +1103,16 @@ ul {
   display: none;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .list-item .title {
-    line-height: 14px;
-  }
-  .box-news .news-item-top .content .news-title {
-    max-height: 48px;
-    overflow: hidden;
-    line-height: 20px;
-  }
-  .news-child .news-item .news-title{
-    line-height: 15px;
-  }
+.content {
+  position: relative;
+}
+.news-item-top .datetime {
+  color: #b4b4ba;
+  font-weight: bold;
+  position: absolute;
+  right: 15px;
+  top: 38px;
+  z-index: 1;
+  background: #fffdfe;
+  padding-left: 10px;
 }

@@ -10,4 +10,7 @@
     .news-child .news-item .news-title{
       line-height: 15px;
     }
+    .ct-content-item .title {
+     line-height: 15.1px;
+    }
   }

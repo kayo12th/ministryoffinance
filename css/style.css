@@ -218,6 +218,8 @@ ul {
   line-height: 20px;
   margin-top: 5px;
   margin-bottom: 0px;
+  max-height: 60px;
+  overflow: hidden;
 }
 .news-child .news-item .news-title a {
   color: #323232;
@@ -270,6 +272,11 @@ ul {
   padding-left: 30px;
   padding-top: 17px;
   padding-right: 15px;
+}
+.list-item .title {
+  max-height: 57px;
+  overflow: hidden;
+  line-height: 18px;
 }
 .list-item .title a {
   font-size: 16px;
@@ -1078,6 +1085,21 @@ ul {
 .ft-left .img img {
   max-width: 100%;
 }
-.btn-menu,.head-menu {
+.btn-menu,
+.head-menu {
   display: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .list-item .title {
+    line-height: 14px;
+  }
+  .box-news .news-item-top .content .news-title {
+    max-height: 48px;
+    overflow: hidden;
+    line-height: 20px;
+  }
+  .news-child .news-item .news-title{
+    line-height: 15px;
+  }
 }

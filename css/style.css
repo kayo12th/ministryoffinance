@@ -29,6 +29,8 @@ ul {
   background: #21436b;
   float: left;
   width: 100%;
+  position: relative;
+  z-index: 4;
 }
 .header-top .time,
 .header-top span i {
@@ -55,6 +57,7 @@ ul {
   width: 100%;
   background: #2673b4;
   position: relative;
+  z-index: 4;
 }
 .banner {
   background: url(../img/banner.png);
@@ -1099,7 +1102,9 @@ ul {
   max-width: 100%;
 }
 .btn-menu,
-.head-menu {
+.head-menu,
+.btn-search-mobile,
+.search-box {
   display: none;
 }
 
@@ -1115,4 +1120,16 @@ ul {
   z-index: 1;
   background: #fffdfe;
   padding-left: 10px;
+}
+.opacity{
+  background-color: rgba(0,0,0,.5);
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  position: fixed;
+  left: 0;
+}
+.hidden{
+  display: none;
 }

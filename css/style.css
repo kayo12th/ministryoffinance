@@ -1133,3 +1133,60 @@ ul {
 .hidden{
   display: none;
 }
+.site-menu {
+  width: 100%;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: #fff;
+  display: none;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 3px 7px rgb(0 0 0 / 10%), 0 0 40px rgb(0 0 0 / 10%) inset;
+}
+.site-menu__list{
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+}
+.site-menu__list>li {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+}
+.site-menu__list>li>a {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  padding: 10px 20px;
+  overflow: hidden;
+  position: relative;
+  color: #333;
+}
+.site-menu__list>li>a:first-child{
+  padding-left: 0;
+}
+.site-menu i{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background: #316ad1;
+  border-radius: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}

@@ -324,7 +324,7 @@
     float: left;
     border-radius: 5px;
     width: 70px;
-    position: relative;
+    position: absolute;
     left: -8px;
     top: 6px;
   }
@@ -337,6 +337,7 @@
     transform: translateY(-50%);
     font-size: 28px;
     color: white;
+    right: 0px;
   }
   .btn-menu .btn-menu-mobile {
     color: white;
@@ -387,7 +388,7 @@
   .logo {
     float: left;
     margin-top: 0px;
-    width: calc(100% - 120px);
+    width: 100%;
     text-align: center;
     margin: 15px 0px;
   }
@@ -504,6 +505,9 @@
   }
   .news-child .news-item .news-title {
     padding: 0 10px;
+  }
+  .site-menu{
+    display: block;
   }
 }
 
@@ -645,6 +649,6 @@
   .logo {
     float: left;
     margin: 10px 0px;
-    width: calc(100vw - 105px);
+    width: 100%;
   }
 }
